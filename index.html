@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+   
+
+
+    <title>IRADERS</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <img src="assets/img/logo.jpg" alt="" width="80" height="80">
+            <h3 style = "color:white;">IRADERS</h3>
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#info" class="nav__link ">Info</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" target="_blank" class="nav__link ">Login</a>
+                    </li>
+                   
+
+
+
+                    
+
+                  <li class="nav__item">
+                        <a href="#trans" class="nav__link  ">Translate</a>
+                    </li> 
+
+
+                  <!--  <li class="nav__item">
+                        <a href="#footer" class="nav__link ">Contact Us</a>
+                    </li> -->
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+         <!--    <div class="nav__btns" onclick="switchHeroImg()">  -->
+                <!-- Theme change button -->
+                <!--  <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+
+            <div class="home__container container grid">
+                <img id="heroImg" src="assets/img/img1.jpg" style="width: 800px;" alt="event" class="home__img">
+
+                <script>
+                    var theme = 1
+
+                    function switchHeroImg() {
+
+                        if (theme == -1) {
+                            document.getElementById('heroImg').src = "assets/img/psna_logo.jpg"
+
+                        } else {
+
+                            document.getElementById('heroImg').src = "assets/img/psna_white_logo.png"
+                        }
+                        theme *= -1
+
+
+                    }
+                </script>
+
+
+
+
+                <div class="home__data">
+                    <h1 class="home__title" >
+                        IRADERS
+                    </h1>
+                    <p class="home__description">
+                        Our Roadside Accident Detection and Emergency Response System ultimately aims to enhance road safety, expedite emergency response, and reduce the severity of accidents by leveraging technology and data-driven insights. 
+                        By combining surveillance cameras wearable sensors and advanced communication technology, we have developed a system that detects roadside accidents, provides immediate assistance, and ensures efficient emergency response .By leveraging cutting -edge technology, we are committed to  saving lives and reducing the time taken for the ambulance to reach the hospital.
+                       "Join the mission, aid the ambulance transition!".
+                    </p>
+                  <!-- <a href="#events" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>--> 
+
+                      
+               
+        </section>
+  
+
+       
+
+        <!--==================== natural medicine====================-->
+        <section class="steps section container" id="info">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                  Information 
+                </h2>
+                <script>
+                    function hide(id) {
+                        var id = document.getElementById(id);
+                        id.style.display = "none";
+                    }
+                </script>
+
+                <div class="steps__container grid">
+
+                    <div class="steps__card" id="evebtn1" onclick="location.href='#eve1'" style="cursor: pointer;">
+                        <a id="evebtn1" href="#eve1" class="steps__card-number">Police</a>
+                        <h3 class="steps__card-title"> </h3>
+                        <p class="steps__card-description">
+                            Police work is challenging, but their unwavering commitment is commendable. The IRADERS system benefits police by providing real-time accident location information and enabling efficient coordination with emergency services, enhancing their ability to respond promptly and effectively to accidents and improve overall road safety.
+
+                            "Pride in Service, Strength in Unity.
+                        </p> 
+
+                    </div>
+<!--popup
+                    <div id="eve1" class="modal">
+
+                        <!-- Modal content 
+                        <div class="modal-content">
+                            <a href="#"><span class="close">&times;</span></a>
+                            <h1> </h1>
+                            <p>No Participants per team: 2</p>
+                            <br>
+                            <img src="#" />
+                            <br><br>
+                            <div class="agree_button">
+                                <a class="agree_tag" href="#register" onclick="hide('eve1')"> <button class="agree">Register</button></a>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                
+                    <div class="steps__card" id="evebtn2" onclick="location.href='#eve2'" style="cursor: pointer;">
+                        <a id="evebtn2" href="#eve2" class="steps__card-number">Public</a>
+                        <h3 class="steps__card-title"> </h3>
+                        <p class="steps__card-description">
+                            It is important to express appreciation to people who provide assistance during an accident. People are benefited by the IRADERS system through enhanced road safety, as it detects accidents promptly and enables faster emergency response, ultimately reducing the severity of accidents and potentially saving lives. 
+
+                            "Always Gives way to AMBULANCE 
+                            Empathize, someday it
+                            Could be you".
+                        </p>
+                    </div>
+ <!--
+                    <div id="eve2" class="modal">
+
+                        Modal content
+                        <div class="modal-content">
+                            <a href="#"><span class="close">&times;</span></a>
+                            <h1> </h1>
+                            <p>No Participants per team: 2</p>
+                            <br>
+                            <img src="#" />
+                            <br><br>
+                            <div class="agree_button">
+                                <a class="agree_tag" href="#register" onclick="hide('eve2')"> <button class="agree">Register</button></a>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+                    <div class="steps__card" id="evebtn3" onclick="location.href='#eve3'" style="cursor: pointer;">
+                        <a id="evebtn3" href="#eve3" class="steps__card-number">Ambulance driver</a>
+                        <h3 class="steps__card-title"></h3>
+                        <p class="steps__card-description">
+                            Ambulance personnel are the first line of defense in medical emergencies, providing critical care on the frontlines. The IRADERS system benefits ambulance drivers by providing accurate accident location information and efficient route guidance, enabling them to reach the scene quickly and transport victims to hospitals promptly, ultimately saving lives.
+                            "Saviors on Wheels, Heroes of the Hour."
+                        </p>
+                    </div>
+
+
+
+
+                    <!--popup
+                    <div id="eve3" class="modal">
+
+                        <!-- Modal content 
+                        <div class="modal-content">
+                            <a href="#"<span class="close">&times;</span></a>
+                            <h1></h1>
+                            <p>No Participants per team: 1</p>
+                            <br>
+                            <img src="#" />
+                            <br><br>
+                            <div class="agree_button">
+                                <a class="agree_tag" href="#" onclick="hide('eve3')"> <button class="agree">Register</button></a>
+                            </div>
+                        </div>
+
+                    </div><!--end-->
+
+
+
+                   
+        </section>
+
+        <!--==================== REGISTRATION ====================
+        <div id="register" class="steps__register">
+            <br><br>
+            <a id="myBtn" href="#tc" class="steps__register-number">Register Now </a>
+
+        </div>
+        <div id="tc" class="modal">
+
+            <!-- Modal content -->
+          <!--  <div class="modal-content">
+                <a href="#register"><span class="close">&times;</span></a>
+                <h1>Terms &amp Conditions</h1> <br>
+
+                <ol> 
+                
+                    
+                <li><p>The registration is only for engineering students from outside of PSNA College Of Engineering and Technology </p></li>
+                <li><p>Participants must bring a valid College ID card for verification purposes</p></li>
+                <li><p>Payment must be made for the team by the individual (per head Rs 350)</p></li>
+                </ol>
+             
+                <br><br>
+                <div class="agree_button">
+                    <a class="agree_tag" href="https://forms.gle/2RzHce5MFdFB7rXF9"><button class="agree">I Agree</button></a>
+                </div>
+            </div>
+
+        </div>-->
+        <!--==================== PRODUCTS ====================-->
+        <!-- <section class="product section container" id="products">
+            <h2 class="section__title-center">
+                Check out our <br> products
+            </h2>
+
+            <p class="product__description">
+                Here are some selected plants from our showroom, all are in excellent shape and has a long life span. Buy and enjoy best quality.
+            </p>
+
+            <div class="product__container grid">
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product1.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Cacti Plant</h3>
+                    <span class="product__price">$19.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product2.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Cactus Plant</h3>
+                    <span class="product__price">$11.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product3.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Aloe Vera Plant</h3>
+                    <span class="product__price">$7.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product4.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Succulent Plant</h3>
+                    <span class="product__price">$5.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product5.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Succulent Plant</h3>
+                    <span class="product__price">$10.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+
+                <article class="product__card">
+                    <div class="product__circle"></div>
+
+                    <img src="assets/img/product6.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Green Plant</h3>
+                    <span class="product__price">$8.99</span>
+
+                    <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                </article>
+            </div>
+        </section> -->
+
+        <!-- ==================== QUESTIONS ====================
+        <section class="questions section" id="faqs">
+            <h2 class="section__title-center questions__title container">
+                Some common questions <br> were often asked
+            </h2>
+
+            <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                My flowers are falling off or dying?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                What causes leaves to become pale?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                What causes brown crispy leaves?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                How do i choose a plant?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                How do I change the pots?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Why are gnats flying around my plant?
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!--==================== maps====================
+        <section class="contact section container" id="maps">
+           
+
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aKhcW3gclGib7Yh-d-rfYmfcfP7V0rQ&ehbc=2E312F" width="100%" height="480"></iframe>
+                </section>
+               <!--    <h2 class="section__title">
+                       Maps
+                    </h2>
+
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle"> <strong > Faculty
+                                Co-ordinator:</strong> <br><pre>  Dr.P.Ramya</pre> <pre>  Assistant Professor/AI&DS</pre></h3>
+                            <span class="contact__description">
+                            &nbsp;  <i class="ri-phone-line contact__icon"></i>
+                                    
+                                    <a href="tel:8056652449">8056652449</a>
+                                   
+                                </span> 
+                                <br>
+                                <br>
+                                
+
+                                <h3 class="contact__subtitle"><strong>Student
+                                    Co-ordinator: </strong><br><pre>  K.S.Naveen Raj</pre><pre>  III YEAR AI&DS</pre></h3>
+                            <span class="contact__description">
+                                &nbsp;<i class="ri-phone-line contact__icon"></i>
+                                    
+                                    <a href="tel:9345601970">9345601970</a> 
+                                    
+                                </span>
+                                <br>
+                                <br>
+                                
+
+                                <h3 class="contact__subtitle"><strong>Student
+                                    Co-ordinator:</strong><br>   <pre >  M.Sriram </pre> <pre>  III YEAR AI&DS</pre></h3> 
+                            <span class="contact__description">
+                                &nbsp;<i class="ri-phone-line contact__icon"></i>
+                                    
+                                    <a href="tel:7397403040">7397403040</a> 
+                                    
+                                </span>
+                              
+
+                                
+                        </div>
+
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Write us by mail</h3>
+                            <span class="contact__description">
+                                <ul>  
+                                    <li><i class="ri-mail-line contact__icon"></i>
+                                  <a href="mailto:sympo23ads@gmail.com">sympo23ads@gmail.com</a></li>
+                                 
+                                 <li>
+                                  <i class="ri-mail-line contact__icon"></i> 
+                                  <a href="mailto:ramyajun26@psnacet.edu.in">ramyajun26@psnacet.edu.in</a> </li> </ul> 
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                </form> 
+            </div>
+        
+    </main>
+--> 
+    <!--==================== FOOTER ====================
+    
+    <footer class="footer section"  id="footer">
+        <div class="footer__container container grid">
+
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Address</h3>
+
+                <ul class="footer__data">
+                    <li class="footer__information">PSNA COLLEGE OF ENGINEERING & TECHNOLOGY,</li>
+                    <li class="footer__information">Kothandaraman Nagar,</li>
+                    <li class="footer__information">Dindigul-624622.</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Contact Us</h3>
+
+                <span class="contact__description">
+            
+                   <div >
+
+                    <p style="font-size: 14px;">        <i class="ri-phone-line contact__icon"></i>Faculty <br>Co-ordinator: Dr.P.Ramya</p>  <a href="tel:8056652449">8056652449</a> <br><br>
+                    <p style="font-size: 14px;">        <i class="ri-phone-line contact__icon"></i>Student <br>Co-ordinator: K.S.Naveen Raj</p><a href="tel:9345601970">9345601970</a><br><br>
+                    <p style="font-size: 14px;">        <i class="ri-phone-line contact__icon"></i>Student <br>Co-ordinator: M.Sriram</p><a href="tel:7397403040">7397403040</a>
+                </div>
+
+               
+
+
+                <div class="footer__social">
+                    
+
+                </div>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    We accept only UPI Transaction
+                </h3>
+
+                <div class="footer__cards">
+                    <img src="assets/img/gpay.png" alt="" class="footer__card">
+                    <img src="assets/img/paytm.png" alt="" class="footer__card">
+                    <img src="assets/img/phone-pe.png" alt="" class="footer__card">
+
+                </div>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">
+                   Web Page created & Developed By
+                </h3>
+
+                <div class="contact__description">
+                    <div>
+                    <p style="font-size: 14px;">       <i class="bi-person-fill"></i> <a style="color:#365949" href="https://www.linkedin.com/in/riyaash-k-287717201/">Riyaash K</a> <br>&nbsp &nbsp III-Yr AI&DS</p><br>
+                    <p style="font-size: 14px;">       <i class="bi-person-fill"></i> <a style="color:#365949" href="https://www.linkedin.com/in/logeshs182/">Logesh S </a><br>&nbsp &nbsp III-Yr AI&DS</p><br>
+                    <p style="font-size: 14px;">       <i class="bi-person-fill"></i> <a style="color:#365949" href="https://www.linkedin.com/in/surya-prakash-4704aa213">Surya Prakash S</a> <br>&nbsp &nbsp III-Yr AI&DS</p> <br>
+                    <p style="font-size: 14px;">       <i class="bi-person-fill"></i> <a style="color:#365949" href="https://www.linkedin.com/in/keathareswar-t-m/">Keathareswar TM </a><br>&nbsp &nbsp III-Yr AI&DS</p><br>
+                    <p style="font-size: 14px;">       <i class="bi-person-fill"></i> <a style="color:#365949" href="https://www.linkedin.com/in/mohan3110/">Mohan SG </a> <br>&nbsp &nbsp III-Yr AI&DS</p>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; PSNACET AI & DS. All rights reserved</p>
+    </footer> -->
+
+    <br>
+    <br>
+
+  <!--Translate-->
+  <div class ="gtrans" id="trans">
+    <div class="translate"> 
+   <h4>Translate</h4>
+                           
+    
+     
+          <div id="google_translate_element"> 
+                       </div>
+         
+   </div>
+   </div>
+   </translate>
+   
+
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+        popUp("eve1", "evebtn1", 0)
+        popUp("eve2", "evebtn2",1)
+        popUp("eve3", "evebtn3",2)
+        popUp("eve4", "evebtn4",3)
+        popUp("eve5", "evebtn5",4)
+        popUp("eve6", "evebtn6",5)
+        popUp("eve7", "evebtn7",6)
+       
+        popUp("tc", "myBtn", 7)
+
+        function popUp(id, btnId, i) {
+            // Get the modal
+            var modal = document.getElementById(id);
+
+            // Get the button that opens the modal
+            var btn = document.getElementById(btnId);
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[i];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+
+<script type="text/javascript"
+        src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+
+
+
+
+
+</body>
+
+</html>
